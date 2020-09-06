@@ -1,5 +1,8 @@
 # Bobble.ai-FrontEnd
 
+## C++ Assignment folder contains C++ challenge
+## Everything outside C++ Assignment folder is Frontend challenge
+
 ## Commands to execute
 The sign up page for this assignment was developed using React.  
 To run this project -
