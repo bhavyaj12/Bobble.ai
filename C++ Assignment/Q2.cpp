@@ -26,7 +26,7 @@ struct TrieNode* getNode()                             //create new node
     return pNode; 
 }; 
 
-void insert(struct TrieNode* root, string key)                //insert node
+void insert(struct TrieNode* root, string key)           //insert node
 { 
     struct TrieNode* R = root;   
     for (int i = 0; i < key.length(); i++)  
@@ -37,7 +37,7 @@ void insert(struct TrieNode* root, string key)                //insert node
         R = R->children[index]; 
     }   
     R->isLeaf = true; 
-    R->count=vocab++;                                        //At each leaf increment the vocab
+    R->count=vocab++;                                   //At each leaf increment the vocab
 } 
 
 bool isLeafNode(struct TrieNode* root) 
@@ -48,7 +48,7 @@ bool isLeafNode(struct TrieNode* root)
 void revsearch(struct TrieNode* root, char str[], int level,int num) 
 { 
     
-    if (isLeafNode(root) && root->count==num)                         //reverse search using number
+    if (isLeafNode(root) && root->count==num)           //reverse search using number
     { 
         str[level] = '\0'; 
         cout << str << endl; 
@@ -87,10 +87,10 @@ int main(int argc,char *argv[])
 
        
         std::cout << std::endl;
-        std::string key = tokens[0]; 				                 //extract string key from vector
+        std::string key = tokens[0]; 				           //extract string key from vector
         for (int i = 0, len = key.size(); i < len; i++) 
           { 
-              if (ispunct(key[i])) 				                  //Remove apostrophes to store just alphabets in tree
+              if (ispunct(key[i])) 				            //Remove apostrophes to store just alphabets in tree
             { 
                 key.erase(i--, 1); 
                 len = key.size(); 
@@ -102,7 +102,7 @@ int main(int argc,char *argv[])
     }
   
    int ch=0;
-   while(1)								                                  //Search until required
+   while(1)								     //Search until required
    { 
     int num;
     cout<<"Enter number to reverse search\n";
