@@ -1,4 +1,4 @@
-# Bobble.ai-FrontEnd
+# FrontEnd Challenge
 
 ### C++ Assignment folder contains C++ ASSESSMENT challenge
 ### Everything outside C++ Assignment folder is Frontend challenge
